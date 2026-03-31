@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZ0RMBKKDY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BZ0RMBKKDY');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Movie Recommendation 🎬</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 MovieFlix</h1>
+            <p class="subtitle">Your Personal Movie Guide</p>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="random.html" class="nav-link active">Random Pick</a>
+                <a href="suggestions.html" class="nav-link">Suggestions</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="page-title">🎲 Get Random Movie Recommendation</h2>
+
+            <div class="movie-card" id="movieCard">
+                <div class="loading">Click the button to get a movie recommendation!</div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-random" onclick="getRandomMovie()">Get Random Movie</button>
+                <button class="btn-netflix" id="netflixBtn" onclick="watchOnNetflix()" style="display: none;">
+                    🎬 Watch on Netflix
+                </button>
+            </div>
+
+            <div class="info-section">
+                <h2>How it works</h2>
+                <p>Click the button above to receive a random movie recommendation from our database. Each recommendation includes the movie title, year, genre, rating, and description. Click "Watch on Netflix" to open the movie on Netflix!</p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MovieFlix</h4>
+                    <p>Your personal movie recommendation engine</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MovieFlix. All rights reserved. Made with ❤️</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
